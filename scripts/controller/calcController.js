@@ -11,6 +11,7 @@ class CalcController{
     }
     //Funçõa de inicialização
     initialize(){    
+        this.displayCalc = "0";
         //Chamada do Método setDisplayTime que mostra a data e hora
         this.setDisplayTime();
         //Usando o setInterval para chamar o método setDisplayTime para que mostre a hora e atualize ele a cada 1s.
@@ -23,6 +24,7 @@ class CalcController{
             element.addEventListener(event, fn, false);
         });
     }
+
     //Definindo um array vazio novamente para simular que limpou tudo
     clearAll(){
         this._operation = [];
@@ -58,7 +60,7 @@ class CalcController{
 
                 break;
             case 'multiplicacao':
-
+                this.test();
                 break;
             case 'porcento':
 
