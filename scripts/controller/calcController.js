@@ -10,8 +10,7 @@ class CalcController{
         this.initButtonsEvents();
     }
     //Funçõa de inicialização
-    initialize(){    
-        this.displayCalc = "0";
+    initialize(){
         //Chamada do Método setDisplayTime que mostra a data e hora
         this.setDisplayTime();
         //Usando o setInterval para chamar o método setDisplayTime para que mostre a hora e atualize ele a cada 1s.
